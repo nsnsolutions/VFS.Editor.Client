@@ -1,0 +1,113 @@
+{
+	"docId": "*** Required: doc id for this post -- used to reference this doc ***",
+	"docId": "12506d92c7244043ade7873551f7dce9",
+	"css": "*** css to apply to editor if not overriden by templates ***",
+	"css": "https://s3-us-west-2.amazonaws.com/editor/OHF.css",
+	"vfs": "*** vfs integration keys ***",
+	"vfs": {
+		"sponsorKey": "70d1e05967d44c8d9a550fefe4530633",
+		"clientKey": "f03cbf3cabac41b0ad9518462c897d1c"
+	},
+	"userUri": "*** call to retrieve user information if not passed in ***",
+	"userUri": "https://api.velma.com/api/ohf/s/6560",
+	"user": "*** user information passed in ****",
+	"user": {
+ 		"ID": 6560,
+    	"UserName": "demo10@velmatools.com1",
+    	"LastName": "Public",
+    	"FirstName": "John",
+    	"FullName": "John Public",
+    	"Email": "john.public@1stDemoMortgage.com",
+    	"Company": "1st Demo Mortgage Company",
+    	"Title": "Senior Loan Officer",
+    	"NMLS": "123456789",
+    	"Disclaimer": "1st Demo Mortgage disclaimer",
+    	"PhotoUrl": "https://api.velma.com/api/subscribers/image/demo10@velmatools.com/1/150/150"
+  	},
+  	"partnersUri": "*** call to retrieve partners if not passed in ***",
+	"partnersUri": "https://api.velma.com/api/ohf/s/6560/p",
+	"partnerUri": " *** call to retrieve partner info by ID any case, if not available it will look in the list first ***",
+	"partnerUri": "https://api.velma.com/api/ohf/s/6560/p/$$ID$$",
+	"partners": "*** passed in list of partners ***",
+  	"partners": [
+    	{
+      		"ID": 1964,
+      		"LastName": "Partner",
+      		"FirstName": "Jennifer",
+      		"Email": "jennifer@velma.com",
+      		"CellPhone": "2085552112", 
+      		"PhotoUrl": "https://api.velma.com/api/partner/image/1964/1/150/150"
+    	},
+    	{
+    	    "ID": 14849,
+      		"LastName": "Realtor",
+      		"FirstName": "John",
+      		"Email": "John@velma.com",
+      		"CellPhone": "2085552113",
+      		"PhotoUrl": "https://api.velma.com/api/subscribers/image/demo10@velmatools.com/1/150/150"
+    	}
+  	],
+  	"templates": "*** Required: minimum of 1 passed in list of templates ****",
+  	"templates": [
+        {
+            "url": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF_5.html",
+            "thumb": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF-4-Preview_Thumb.png",
+            "contactArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/ContactAreaNew.html",
+            "disclaimerArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/DisclaimerArea.html",
+            "productTemplateId": 1
+        },
+        {
+            "url": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF_4.html",
+            "thumb": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF-4-Preview_Thumb.png",
+            "contactArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/ContactAreaNew.html",
+            "disclaimerArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/DisclaimerArea.html",
+            "productTemplateId": 1
+        },
+        {
+            "url": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OH_2_V3.html",
+            "thumb": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF-3-Preview.png",
+            "contactArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/ContactAreaNew.html",
+            "disclaimerArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/DisclaimerArea.html",
+            "productTemplateId": 1
+        },        
+        {
+            "url": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/dcarter/editor/OHF.html",
+            "thumb": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF-1-Preview.png",
+            "contactArea": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/dcarter/editor/ContactArea.html",
+			"disclaimerArea": "",
+			"productTemplateId": 1
+        },
+		{
+            "url": "https://s3.amazonaws.com/velmadocs/Homeside/OHF/OH_1_V3.html",
+            "thumb": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/nnordby/OHF-2-Preview.png",
+            "contactArea": "https://s3.amazonaws.com/velmadocs/Homeside/OHF/homesideContactArea_V11.html",
+			"disclaimerArea": "",
+			"productTemplateId": 1
+        }
+    ],
+  	"toolbar": "*** For toolbar overrides -- will read internal config if this is missing ***",
+  	"toolbar": {
+	    "editAttr": "editType",
+	    "editOverrides": "editOverrides",
+	    "toolbars": {
+	        "simple": 
+	            [
+	                "bold"
+	            ],
+	        "full": 
+	            [
+	                "italic", 
+	                "underline", 
+	                "strikeThrough", 
+	                "subscript", 
+	                "superscript", 
+	                "-"
+	            ],
+	        "image": 
+	            [
+	                "bold", 
+	                "italic"
+	            ]
+	    }
+	}
+ }

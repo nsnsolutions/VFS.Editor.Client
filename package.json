@@ -1,0 +1,22 @@
+{
+  "name": "hello_world_web",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Dave Carter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.6",
+    "child_process": "^1.0.2",
+    "chrome-launch": "^1.1.4",
+    "chrome-location": "^1.2.1",
+    "fs": "0.0.1-security",
+    "quick-tmp": "^1.0.0",
+    "request": "^2.75.0"
+  }
+}
